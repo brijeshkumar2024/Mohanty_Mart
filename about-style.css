@@ -1,0 +1,342 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('mmm.jpg');
+    background-color: #1c52
+    -9; /* Dark blue background */
+    padding: 20px 0; /* Add padding for spacing */
+    margin-top: 30px; /* Bring the header down */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    text-align: center; /* Center the content */
+    text-shadow: #00ff08;
+    
+}
+
+/* Styling for the About Us h1 */
+header h1 {
+    
+    text-decoration: underline;
+    font-size: 2.8em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #15ffff; /* Bright yellow text color */
+    margin: 0; /* Remove default margin */
+}
+
+#about-header {
+    background-image: url('we.jpg');
+    background-color: #0f3777; 
+    color: #4d5126;
+    padding: 30px 0; 
+    text-align: center;
+    margin-top: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    
+}
+
+/* Styling for the About Us h1 */
+#about-header h1 {
+    
+    font: 200;
+    font-size: 2.8em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 0;
+}
+
+
+/* Section Styling */
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling for Sections */
+section h1, section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+/* Updated styling for the About Us header */
+
+
+/* Paragraph Styling for Sections */
+section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Individual Section IDs for Customization */
+/* Adding background properties for better image display */
+#about {
+    background-color: #f9f9f9;
+    background-image: url('1.jpg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+#mission {
+    background-color: #f2f7fc;
+    background-image: url('2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#history {
+    background-color: #fcf8f2;
+    background-image: url('3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#team {
+    background-color: #f7f2fc;
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#products {
+    background-color: #f2fcf3;
+    background-image: url('5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Button Styling */
+.btn {
+    background-color: #42ff75;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background-color: #ff003c;
+}
+
+/* Navigation Links */
+.nav-links {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff4646;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.6s;
+}
+
+.nav-links li a:hover {
+    color: #00ff08;
+    background: #353535;
+}
+#map {
+    text-align: center;
+    background-color: #e1ff9c;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#map h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#map p {
+    font-size: 16px;
+    color: #666;
+}
+
+#map a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#map a:hover {
+    color: #00ff08;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    background-image: url(footer.jpg);
+    background-color: #000000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer a {
+    color: #eaff00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #17e90f;
+    text-decoration: underline;
+}
+
+/* Reach Out Section */
+.reach-out {
+    background-image: url('rtu.jpg');
+    background-color: rgba(238, 255, 0, 0.73);
+    border-left: 5px solid #2f3a4c;
+    padding: 10px;
+    margin: 20px 0;
+    background-size: cover;
+    background-position: center;
+    color: #fffffff0;
+    text-align: center;
+}
+
+.reach-out a {
+    color: #4285f4;
+}
+
+.reach-out a:hover {
+    color: #fffb00;
+    text-decoration: underline;
+}
+
+.reach-out h1 {
+    color: #34ff07;
+    text-decoration: underline;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .welcome-box, .subtitle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    section h1, section h2 {
+        font-size: 24px;
+    }
+}
+/* General mobile adjustments */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Set header to full width and adjust padding */
+    .header {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    /* Adjust section padding and width */
+    section {
+        padding: 20px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Navigation adjustments */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    /* Ensure images and other media are responsive */
+    img, .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Specific fix for About Us header section */
+    #about-header {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Footer adjustments for mobile */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Adjust buttons */
+    .btn {
+        width: auto; /* Avoid fixed widths */
+        max-width: 90%;
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    
+}
+
+/* Header */
+.header {
+    background-color: #000000ec;
+    color: white;
+    
+    text-align: center;
+    margin-top: 0px;
+}
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .welcome-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+        padding: 10px;
+        width: auto;
+        max-width: 90%;
+    }
+    
+    .btn {
+        width: 100%; /* Make the button full width on mobile */
+        margin-top: 10px;
+    }
+
+}
+/* Adjust Button Styling */
+.btn {
+    background-color: #42ff75;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    max-width: 200px; /* Limit the width of the button */
+}
+
+.btn:hover {
+    background-color: #ff003c;
+}
+
+
+
+.nav-links {
+
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    
+
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+    @media (max-width: 768px) {
+        .welcome-box {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px; /* Optional: Adds some padding for spacing */
+            width: 100%; /* Ensures the box takes full width on mobile */
+        }
+    
+        /* Optional: Adjust button styling for smaller screens */
+        .welcome-box .btn {
+            width: auto;
+            margin-top: 10px; /* Adds spacing between buttons */
+        }
+    }
+    @media (max-width: 768px) {
+        .subtitle {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px; /* Adds some padding for spacing */
+            width: 100%; /* Ensures the box takes full width on mobile */
+        }
+    
+        /* Adjust button styling for smaller screens */
+        .btn {
+            width: auto;
+            margin-top: 10px; /* Adds spacing between buttons */
+        }
+    }
+    
+
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    
+}
+.nav-links li a {
+    position: relative;
+}
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff4646;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.6s;
+}
+.nav-links li a:hover {
+    width: 70px;
+    height: fit-content;
+    color: #00ff08;
+    background: #353535;
+}
+.products{
+    background: #ac1313;
+}
+.btn-secondary:hover
+{
+    color: #11ff21;
+    background: rebeccapurple;
+}
+.social-icons{
+    color: #ffffff;
+}
+#map {
+    text-align: center;
+    background-color: #e1ff9c;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#map h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#map p {
+    font-size: 16px;
+    color: #666;
+}
+
+#map a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#map a:hover {
+    color: #c41414d5;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #6561b9; /* Fallback color */
+    background-image: url('welcome.jpg'); /* Ensure the image path is correct */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+    min-height: 300px; /* Minimum height for the hero section */
+}
+  @media (max-width: 600px) {
+            .hero {
+                padding: 30px 10px; /* Smaller padding for mobile devices */
+                min-height: 200px; /* Adjust minimum height */
+            }
+
+            h1 {
+                font-size: 1.8em; /* Slightly smaller font size for h1 */
+            }
+
+            p {
+                font-size: 1em; /* Adjust paragraph font size for readability */
+            }
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        p {
+            margin-top: 10px; /* Add some space above paragraphs */
+        }
+
+.hero-content {
+    
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.subtitle {
+    font-size: 1.2em; /* Subtitle size */
+    margin: 10px 0; /* Space above and below the subtitle */
+    width: 1000px;
+}
+.st
+    {
+        font-size: 1em;
+        padding: 10px;
+        width: auto;
+        max-width: 90%;
+        color: #fffdfd; /* Text color */
+        background-color: #000000; /* Background color */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        margin: 10px auto; /* Centering and spacing */
+    }
+.btn {
+    background-color: #800080; /* Purple color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #5e005e; /* Darker purple on hover */
+}
+
+
+.welcome-box {
+    
+
+    background: url('') no-repeat center center;
+    background-size: cover; /* Cover the entire box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(80, 52, 52, 0.1); /* Add a subtle shadow */
+    display: inline-block;
+    color: white; /* Make text white to contrast with the background */
+}
+
+.welcome-box h2,
+.subtitle {
+    background-color: rgb(0, 0, 0); /* Semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.welcome-box h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Subtitle Styling for Responsiveness */
+.subtitle {
+    font-size: 1.2em; /* Default font size for larger screens */
+    margin-bottom: 20px;
+    color: #d4d4d4;
+    text-align: center; /* Center text alignment */
+    max-width: 90%; /* Ensures the text doesn't extend beyond the screen */
+    margin: 0 auto; /* Centers the element */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .subtitle {
+        font-size: 1em; /* Slightly reduce font size for smaller screens */
+        padding: 10px; /* Add some padding for spacing */
+        width: auto; /* Ensures it fits the screen width */
+    }
+}
+
+.btn {
+    background-color: #42ff75;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff2a5c;
+}
+
+
+.search-bar {
+    margin-top: 1em;
+    padding: 0.5em;
+    width: 80%;
+    max-width: 500px;
+}
+
+ .footer {
+    background-image: url(footer.jpg);
+    background-color: #000000;  color: #f0f0f0; /* Light gray text */
+text-align: center;
+padding: 1em 0;
+}
+.footer a{
+    background: #000;
+}
+.social-icons a {
+    color: #e600ff; /* Change this to your preferred color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+/* Social Icons Hover Effect */
+.social-icons a:hover {
+color: #67ff59; /* Purple hover color */
+}
+/* About Us Section */
+.about-us {
+    background: url('au.jpg') no-repeat center center/cover; /* Background image */
+    padding: 3em 1em;
+    color: white;
+    text-align: center;
+}
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    color: #ff1919; /* Purple color for heading */
+    margin-bottom: 1em;
+}
+
+.about-us p {
+    color: #f0f0f0; /* Light gray for text */
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+/* CTA Section */
+.cta {
+    background-image: url(vut.jpg);
+    background-color: #4b0082; /* Purple background */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+}
+
+.cta-content h2 {
+    color: #00ffff;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+
+.btn {
+    background-color: #ff0000; /* Dark color for button */
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    margin: 0.5em;
+    border-radius: 5px;
+
+}
+
+.btn:hover {
+    background-color: #11ff21; /* Hover effect for the button */
+}
+
+.btn-secondary {
+    background: #ff0000;
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #777;
+}
+
+
+/* Styling for paragraph links */
+.footer p a {
+    color: #eaff00; /* Light gray color for the link text */
+    text-decoration: none; /* Remove the underline */
+}
+
+/* Hover effect for the links */
+.footer p a:hover {
+    color: #17e90f; /* Purple color when hovering */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Products */
+.products {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+/* Services Section */
+.services {
+    background-image: url(S.JPG);
+    background-color: #e0ee24; /* Light background color */
+    padding: 40px 20px;
+    padding:  100px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #ffffff; /* Dark color for the heading */
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff; /* White background for each service item */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Responsive width */
+    max-width: 300px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #5b34ad; /* Matching with dark purple */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.mission-section {
+    color: #000;
+    text-align: center; /* Center the text */
+    padding: 40px; /* Add padding around the section */
+    background-image: url(mission.jpg); /* Background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    position: relative; /* Positioning for overlay */
+    margin: 20px; /* Margin around the section */
+    border-radius: 8px; /* Rounded corners */
+    position:relative ;
+}
+
+.mission-section::before {
+    
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10; 
+}
+
+.mission-content {
+    position: relative; /* Relative positioning for content */
+    z-index: 2; /* Ensure content appears above the overlay */
+    padding: 20px; /* Padding for content */
+    text-align: center; /* Center the text */
+}
+
+/* Heading styles */
+.mission-section h2 {
+    font-size: 38px; /* Font size for the heading */
+    color: #ffffff; /* White color for strong contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Stronger shadow for readability */
+}
+
+/* Paragraph styles */
+.mission-section p {
+    font-size: 20px; /* Font size for the paragraph */
+    color: #eeff00; /* Bright yellow color for high visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Stronger shadow for better readability */
+}
+
+
+
+/* Fade-in effect */
+
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Slides Container */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+/* Individual Slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slider Navigation (Optional: You can style the dots for navigation) */
+.slider-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-nav span {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.slider-nav .active {
+    background-color: #800080; /* Active dot color */
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .service-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        font-size: 1em; /* Slightly reduce font size for smaller screens */
+        padding: 10px; /* Add some padding for spacing */
+        width: auto; /* Ensures it fits the screen width */
+    }
+
+}
+.logo {
+    height: 100px; /* Adjust as needed */
+    text-align: left;
+    vertical-align: left;
+    
+}
+.container h1{
+    font-size: 2.5em;
+    color: #44eafd
+}
+.reach-out {
+    background-image: url('rtu.jpg'); /* Ensure the image path is correct */
+    background-color: rgba(238, 255, 0, 0.73); /* Using RGBA for transparency */
+    border-left: 5px solid #2f3a4c; 
+    padding: 10px;
+    margin: 20px 0; /* Spacing around the contact section */
+    background-size: cover; /* Cover the entire div with the image */
+    background-position: center; /* Center the background image */
+    color: #fffffff0; /* Text color for better readability */
+    text-align: center;
+}
+
+.reach-out a {
+    color: #4285f4; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+.reach-out a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #fffb00;
+}
+.reach-out h1{
+    color: #34ff07;
+    text-decoration: underline;
+    
+}

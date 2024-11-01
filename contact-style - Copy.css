@@ -1,0 +1,325 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #333;
+    margin: 20px;
+}
+#contact h2 {
+    text-align: center; /* Center the text */
+    color: white; /* Change color to white */
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+.about-header h1{
+    display: center;
+    color: #00ff0d;
+}
+
+/* Header Styling */
+header {
+    background-image: url('mmm.jpg');
+    background-color: #a1c8fb; /* Dark blue background */
+    padding: 20px 0;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+
+header h1 {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #ff00ee;
+    text-decoration: underline;
+}
+.nav-links {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: contents;
+}
+
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #c54242;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.6s;
+}
+
+.nav-links li a:hover {
+    color: #00ff08;
+    background: #353535;
+}
+
+/* Remove the Welcome section */
+#contact {
+    display: contents; /* Hides the Welcome section */
+}
+
+
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+nput::placeholder, textarea::placeholder {
+    color: #ccc; /* Lighter color for placeholders */
+}
+div {
+    text-align: center; /* Align the content to the right */
+}
+
+.submit  {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display:inline-block;
+    transition: background-color 0.3s;
+}
+
+
+.submit:hover {
+    background-color: #ffff00;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(153, 255, 0); /* Change label color to white */
+}
+#map {
+    margin-top: 20px;
+    text-align: center; /* Center text in the map section */
+}
+
+#map iframe {
+    max-width: 100%; /* Make iframe responsive */
+    height: 400px; /* Fixed height for map */
+    border: 0; /* Remove border */
+}
+
+/* Footer Styling */
+.footer {
+    background-image: url('footer.jpg');
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #eaff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #17e90f;
+    text-decoration: underline;
+}
+.contact-details {
+    background-color: rgb(157, 83, 83); /* Light background for visibility */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin: 20px auto; /* Center the box horizontally */
+    max-width: 400px; /* Max width for the box */
+}
+.contact-details a {
+    color: rgb(255, 255, 0); /* Set link color to orange */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-details a:hover {
+    color: rgb(0, 255, 72); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-details {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Reach Out Section */
+.reach-out {
+    background-image: url('rtu.jpg');
+    background-color: rgba(238, 255, 0, 0.73);
+    border-left: 5px solid #2f3a4c;
+    padding: 20px;
+    margin: 20px 0;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.reach-out a {
+    color: #4285f4;
+    transition: color 0.3s;
+}
+
+.reach-out a:hover {
+    color: #fffb00;
+    text-decoration: underline;
+}
+
+.reach-out h1 {
+    color: #34ff07;
+    text-decoration: underline;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .welcome-box, .subtitle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section h1, section h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        width: auto;
+        max-width: 90%;
+        margin-top: 10px;
+    }
+
+    img, .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #about-header {
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+#map {
+    text-align: center;
+    background-color: #e1ff9c;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#map h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#map p {
+    font-size: 16px;
+    color: #666;
+}
+
+#map a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#map a:hover {
+    color: #f45a13;
+    text-decoration: underline;
+}
